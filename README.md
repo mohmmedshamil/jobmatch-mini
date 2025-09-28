@@ -132,18 +132,18 @@ On push to main → builds :latest
 On tagged release (v*) → builds :vX.Y.Z
 
 ## database connection
-# Switch to postgres user
+### Switch to postgres user
 sudo -i -u postgres
 psql
 
-# Create database
+### Create database
 CREATE DATABASE jobfinderdb;
 
-# from docker
+### from docker
 docker exec -it jobmatch_postgres psql -U postgres
 CREATE DATABASE jobfinderdb;
 
-# make user as admin user
+### make user as admin user
 python manage.py shell
 from django.contrib.auth import get_user_model
 
