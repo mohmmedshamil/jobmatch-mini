@@ -1,6 +1,6 @@
-##  JobMatch Mini
+# JobMatch Mini
 
-A minimal recruitment platform with:
+### A minimal recruitment platform with:
 
 Backend (Django + DRF + PostgreSQL + Elasticsearch)
 
