@@ -209,3 +209,25 @@ user.is_staff = True       # Staff user
 user.is_superuser = True   # Superuser
 
 user.save()
+
+### .env
+#### .env.docker
+POSTGRES_DB=jobfinderdb
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgrespassword
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
+DEBUG=False
+ELASTICSEARCH_HOST=elasticsearch
+ELASTICSEARCH_PORT=9200
+
+#### .env.local
+POSTGRES_DB=jobfinderdb
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=yourpassword
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+DEBUG=True
+ELASTICSEARCH_HOST=elasticsearch
+ELASTICSEARCH_PORT=9200
+
